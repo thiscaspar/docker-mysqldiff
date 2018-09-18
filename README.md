@@ -6,5 +6,6 @@ This is a Docker wrap of the Perl frontend script [mysqldiff](https://metacpan.o
 docker run -it --network host --rm  coostendorp/mysqldiff mysqldiff -h HOST -u USER -p PASSWORD -i DB1 DB2
 ```
 
-# Options
-https://metacpan.org/pod/distribution/MySQL-Diff/bin/mysqldiff
+# Notes
+- For documentation of the cli tool: https://metacpan.org/pod/distribution/MySQL-Diff/bin/mysqldiff
+- For accessing a mysql server on localhost, using 127.0.0.1 seems to work better than "localhost".
