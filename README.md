@@ -1,10 +1,13 @@
 # About
 This is a Docker wrap of the Perl frontend script [mysqldiff](https://metacpan.org/pod/distribution/MySQL-Diff/bin/mysqldiff)  to the Perl CPAN module [Mysql::Diff](http://search.cpan.org/search?module=MySQL::Diff). It's based on the "slim" [perl image](https://hub.docker.com/_/perl/) (no specific version specified, but current push is using 5.28). 
 
-# Run
+# Run 
+## On Linux
 ```
 docker run -it --network host --rm  coostendorp/mysqldiff mysqldiff -h HOST -u USER -p PASSWORD -i DB1 DB2
 ```
+## On Mac (Docker < 18.03)
+If your mysql runs on localhost, use **docker.for.mac.localhost** as the hostname
 
 # Notes
 - For documentation of the cli tool: https://metacpan.org/pod/distribution/MySQL-Diff/bin/mysqldiff
